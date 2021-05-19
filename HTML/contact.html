@@ -1,0 +1,121 @@
+<!--
+    Name: Peter Pasieka
+    Course: HND Computing Science
+    Since: 21/04/2021
+    Website Name: The Local Theatre
+    Version: V1
+-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        
+        <title> The Local Theatre - Contact Us </title>
+
+        <link rel = "stylesheet" type = "text/css" media = "screen" href = "../CSS/style_desktop.css">
+        <link rel = "stylesheet" type = "text/css" media = "screen" href = "../CSS/style_ipad.css">
+        <link rel = "stylesheet" type = "text/css" media = "screen" href = "../CSS/style_iphone.css">
+
+    </head>
+
+    <body>
+
+        <div class ="hero-image">
+            <div class="hero-text">
+                <h1> The Local Theatre </h1>
+            </div>
+        </div>
+
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="contact.html"> Contact Us </a></li>
+            <li><a href="../PHP/blog-index.php"> Blog </a></li>
+            <li style = "float:right"><a href="login.html"> Login </a></li>
+        </ul>
+    
+        <div class ="block-left">
+
+            <content-container>
+                <note-space>
+                    <div class="helpbox"><button onclick="showHelpBox()"> ? </button>
+                        <span class="helpboxtext" id="HelpBoxElement"> Please fill out this form if you require any assistance. Our Customer Support team will get back to you as soon as possible. Note:
+                                                    The "Contact Us" form should only be used if your question does not appear under the FAQ list. </span>
+                    </div>
+                </note-space>            
+                <script>
+                    function showHelpBox() {
+                        var element = document.getElementByID("HelpBoxElement");
+
+                        if (element.style.visibility === "hidden" ) {
+                            element.style.visibility = "visible";
+                        } else {
+                            element.style.visibility = "hidden";
+                        }
+                    }
+
+              
+                </script>   
+
+                <h2 name="form-name"> Contact Us Form </h2>
+                <form name = "contact-help" method = "post" action="../PHP/processForm.php">
+
+                    <div class = firstname>
+                        <label> First Name: </label>
+                        <input type="text" name="firstname" size="20" required/>
+                    </div>
+
+                    <div class = lastname>
+                        <label> Last Name: </label>
+                        <input type="text" name="lastname" size="20" required/>
+                    </div>
+
+                    <div class = email>
+                        <label> E-Mail Address: </label>
+                        <input type="text" name="email" size="20" required/>
+                    </div>
+
+                    <div class = topic>
+                        <label> Topic of Discussion: </label>
+                        <input type="text" name="topic" size="20" required/>
+                    </div>
+
+                    <div class = addDetail>
+                        <label> Additional Details: </label>
+                        <textarea rows="10" cols="30" name="addDetails" wrap="soft"></textarea>
+                    </div>
+
+                    <div class = button>
+                        <td colspan="5"><button type="submit" value="submitForm"> Submit Form </button></td>
+                    </div>
+                </form>
+            </content-container>
+
+            <contactus-seperator>
+            </contactus-seperator>
+
+            <contact-container>
+                <h1> Frequently Asked Questions </h1>
+                <h3> Please select a topic: </h3>
+                <h3> If your problem is not shown, please fill out our contact form. </h3>
+                <hr>
+                <h2> Becoming an admin </h2>
+                <p> Problems / Questions relating to a admin. </p>
+                <hr>
+                <h2> My Blog Won't Publish </h2>
+                <p> Problems / Questions relating to a blogpost </p>
+                <hr>
+                <h2> Booking </h2>
+                <p> Problems / Questions relating to a booking. </p>
+                <hr>
+            </contact-container>
+
+        </div>
+            
+    </body>
+
+
+
+</html>

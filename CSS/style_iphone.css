@@ -1,0 +1,397 @@
+/** FONT IMPORT **/
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Yatra+One&display=swap');
+
+/** OPTIMISED FOR iPHONE **/
+
+@viewport {
+    width:auto;
+    zoom: 1.1;
+    min-zoom: 0.4;
+    max-zoom: 2;
+    user-zoom: fixed;
+}
+
+@media only screen and (max-width: 480px) {
+    * { margin: 0px; padding: 0px; }
+
+    html { height: 100%; box-sizing: border-box; }
+    body {
+        height: 100%;
+        margin: 0px;
+        background-size: cover;
+        font-family: 'Yatra One', cursive;
+    }
+    
+    hr { margin: 10px 0px; opacity: .25; }
+    
+    /* The hero image */
+    .hero-image {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/PTB-Theatre-Royal-1\.jpg);
+        height: 30%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;  
+    }
+  
+    /* Places text in the middle of the image */
+    .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+    
+    /* Nav Bar start */
+    li {
+        float: left;
+    }
+    
+    ul {
+      position: sticky;
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+      width: auto;
+      background-color: #333;
+      height: 32px;
+      
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 1px 15px;
+        text-decoration: none;
+        border-style: groove;
+        border-color: grey;
+    }
+    
+    li:hover {
+        background-color: #faa45b;
+    }
+    
+    .container {
+        width: 75%;
+        position: absolute;
+        padding-left: 2%;
+        left: 12%;
+    }
+    
+    .block-left {
+        height: 150%;
+        width: 11.5%;
+        background-color: #a3594b;
+    
+    }
+    
+    textarea {
+        resize: none;
+    }
+    
+    /** index page **/
+    
+    video-container {
+        position: absolute;
+        top: 130%;
+        left: 15%;
+        width: 80%;
+        height: 50%;
+        background-color: rgb(138, 123, 123);
+    }
+
+
+    
+    /** contact page **/
+    
+    div.block-left {
+        background-color: #fff;
+
+    }
+
+    content-container {
+        top: 37%;
+        width: 80%;
+        position: absolute;
+        left: 13%;
+        background-color: #f7e2b1;
+        height: 65%;
+    }
+    
+    contact-container {
+        padding-left: 2%;
+        padding-right: 2%;
+        top: 105%;
+        width: 65%;
+        position: absolute;
+        left: 14%;
+        background-color: #fdc588;
+        height: 55%;
+
+    }
+    
+    content-container h2[name="form-name"] {
+      position: relative;
+      left: 50%;
+    }
+    content-container form div.firstname label {
+        position: absolute;
+        left: 20%;
+        top: 10%;
+    }
+    
+    content-container form div.firstname input {
+        position: absolute;
+        left: 20%;
+        top: 14%;
+        width: 20%;
+    }
+    
+    content-container form div.lastname label {
+        position: absolute;
+        left: 55%;
+        top: 10%;
+    }
+    
+    content-container form div.lastname input {
+        position: absolute;
+        left: 55%;
+        top: 14%;
+        width: 20%;
+    }
+    
+    content-container form div.email label {
+        position: absolute;
+        left: 20%;
+        top: 20%;
+    }
+    
+    content-container form div.email input {
+        position: absolute;
+        left: 20%;
+        top: 24%;
+        width: 55%;
+    }
+    
+    content-container form div.topic label {
+        position: absolute;
+        left: 20%;
+        top: 30%;
+    }
+    
+    content-container form div.topic input{
+        position: absolute;
+        left: 20%;
+        top: 34%;
+        width: 55%;
+    }
+    
+    content-container form div.addDetail label {
+        position: absolute;
+        left: 20%;
+        top: 40%;
+    }
+    
+    content-container form div.addDetail textarea {
+        position: absolute;
+        left: 20%;
+        top: 45%;
+        width: 55%;
+        height: 38%;
+    }
+    
+    content-container form div.button {
+        position: absolute;
+        left: 35%;
+        top: 90%;
+    }
+    
+    contactus-seperator {
+        visibility: hidden;
+    }
+
+     /* Help Box */
+     content-container note-space .helpbox {
+        font-size: large;
+        position: relative;
+        top: 2%;
+        left: 2%;
+        display: inline-block;
+        border: 1px black;
+      }
+  
+      content-container note-space .helpbox .helpboxtext {
+        visibility: hidden;
+        width: 160px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+      
+      /* Position help box */
+        position: absolute;
+        z-index: 1;
+      }
+  
+      content-container note-space .helpbox:hover .helpboxtext {
+        visibility: visible;
+      }
+  
+    /** Login Page**/
+    /* Login Page */
+.block-left h1[name="loginHeader"] {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+}
+
+.block-left h1[name="registerHeader"] {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+}
+
+.block-left h3[name="loginSubheader"] {
+    position: absolute;
+    left: 23%;
+    top: 55%;
+}
+
+.block-left h3[name="registerSubheader"] {
+    position: absolute;
+    left: 66%;
+    top: 55%;
+}
+
+.block-left button[name= "Login"] {
+    position: absolute;
+    left: 22.5%;
+    top: 70%;
+}
+
+.block-left button[name= "Register"] {
+    position: absolute;
+    left: 67%;
+    top: 70%;
+}
+
+div.block-middle {
+    visibility: hidden;
+  } 
+
+    /** blog-start page **/
+    
+    blog-container {
+        position: absolute;
+        width: 65%;
+        height: 65%;
+        background-color:rgba(184, 19, 19, 0.5);
+        left: 20%;
+        top: 40%;
+        padding-left: 2%;
+    }
+    
+    blog-description {
+        position: inherit;
+        width: 75%;
+        height: 30%;
+        background-color: aqua;
+        
+    }
+    
+    blog-description textarea {
+        width: 100%;
+        height: 100%;
+    }
+    
+    blog-comments {
+        position: relative;
+        width: 100%;
+        top: 35%;
+    }
+    
+    blog-comments-box {
+        position: inherit;
+        width: 100%;
+        height: 10%;
+        /* background-color: aqua; */
+    }
+    
+    blog-comments-box textarea {
+      
+        width: 78%;
+        height: 10%;
+    
+    }
+
+    @media only screen and (max-width: 480px) {
+      
+        div.login-here {
+          position: absolute;
+          top: 10%;
+          left: 26%;
+          width: 60%;
+          height: 75%;
+        }
+        
+        div.register-here {
+          position: absolute;
+          top: 35%;
+          right: 45%;
+          width: 60%;
+          height: 75%;
+        }
+        .block-left h1[name="loginHeader"] {
+            position: relative;
+            left: 8.5%;
+            top: 42%;
+            word-wrap: break-word;
+        }
+        
+        .block-left h1[name="registerHeader"] {
+            position: relative;
+            left: 57%;
+            top: 60%;
+        }
+        
+        .block-left h3[name="loginSubheader"] {
+            position: relative;
+            left: 1%;
+            top: 41%;
+        }
+        
+        .block-left h3[name="registerSubheader"] {
+            position: relative;
+            left: 53%;
+            width: auto;
+            top: 65%;
+        }
+        
+        .block-left button[name= "Login"] {
+            position: absolute;
+            left: 25%;
+            top: 70%;
+            width: auto;
+        }
+        
+        .block-left button[name= "Register"] {
+            position: absolute;
+            left: 75%;
+            top: 95%;
+            width: auto;
+        }
+        
+          div.block-right {
+          width: 0%;
+          } 
+        
+          div.block-middle {
+            width: 0%;
+          }
+        }
+
+}

@@ -1,0 +1,134 @@
+<!--
+    Name: Peter Pasieka
+    Course: HND Computing Science
+    Since: 21/04/2021
+    Website Name: The Local Theatre
+    Version: V1
+-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <title> The Local Theatre </title>
+
+        <link rel = "stylesheet" type = "text/css" media = "screen" href = "../CSS/style_desktop.css">
+        <link rel = "stylesheet" type = "text/css" media = "screen" href = "../CSS/style_ipad.css">
+        <link rel = "stylesheet" type = "text/css" media = "screen" href = "../CSS/style_iphone.css">
+    </head>
+
+    <body>
+
+        <div class ="hero-image">
+            <div class="hero-text">
+                <h1> The Local Theatre </h1>
+            </div>
+        </div>
+
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="contact.html"> Contact Us </a></li>
+            <li><a href="../PHP/blog-index.php"> Blog </a></li>
+            <li style = "float:right"><a href="login.html"> Login </a></li>
+        </ul>
+    
+        <div class ="block-left">
+
+            <div class ="login-here">
+                <script src="../JS/scripts.js"></script>
+                <!-- Button to open the modal login form -->
+                <h1 name="loginHeader"> Returning member? </h1>
+                <h3 name="loginSubheader"> Login to your below: </h3>
+
+                <button onclick="document.getElementById('login').style.display='block'" name = "Login">Login</button>
+
+                    <!-- The Modal -->
+                    <div id="login" class="modal">
+                    <span onclick="document.getElementById('login').style.display='none'"
+                    class="close" title="Close Modal">&times;</span>
+
+                        <!-- Modal Content -->
+                            <form class="modal-content login" method="post" action="../PHP/login.php">
+                                <div class="account-container">
+                                    <h2> Login to an exisiting account: </h2>
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required/>
+
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required/>
+
+                                    <button type="submit" name="submit" value="Login">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                </div> <!-- account container end -->
+
+                                <div class="account-container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                                </div> <!-- cancel button end-->
+
+                            </form> <!-- modal-content login end-->
+                        </div> <!-- login modal end -->
+            </div> <!-- login-here end -->
+
+            <div class ="block-middle">
+            </div>
+                <div class ="register-here">
+                    <h1 name="registerHeader"> New here? </h1>
+                    <h3 name="registerSubheader"> Register an account below: </h3>
+                    <!-- Button to open the modal login form -->
+                    <button onclick="document.getElementById('register').style.display='block'" name = "Register">Register</button>
+
+                        <!-- The Modal -->
+                        <div id="register" class="modal">
+                        <span onclick="document.getElementById('register').style.display='none'"
+                        class="close" title="Close Modal">&times;</span>
+
+                            <!-- Modal Content -->
+                                <form class="modal-content login" method="post" action="../PHP/register.php">
+                                    <div class="account-container">
+                                        <h2> Register an account: </h2>
+                                        <label for="uname"><b>Username</b></label>
+                                        <input type="text" placeholder="Enter Username" name="uname" required/>
+
+                                        <label for="email"><b>E-Mail Address</b></label>
+                                        <input type="text" placeholder="Enter E-Mail" name="email" required/>
+
+                                        <label for="psw"><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="psw" required id="psw"/>
+
+                                        <label for="psw"><b>Re-Enter Password</b></label>
+                                        <input type="password" placeholder="Re-Enter Password" name="re_psw" required oninput="check(this)" id="re_psw"/>
+                                                <script language='javascript' type='text/javascript'>
+                                                    function check(input) {
+                                                        if (input.value != document.getElementById('psw').value) {
+                                                            input.setCustomValidity('Passwords must be matching.');
+                                                        } else {
+                                                            // reset error message if valid
+                                                            input.setCustomValidity('');
+                                                        }
+                                                    }
+                                                </script>
+                                        <button type="submit" name = "submit" value="Register">Register</button>
+                                    </div>
+
+                                    <div class="account-container" style="background-color:#f1f1f1">
+                                        <button type="button" onclick="document.getElementById('register').style.display='none'" class="cancelbtn">Cancel</button>
+                                    </div>
+                                </form>
+                        </div>
+                    </div>
+
+                <div class ="block-right">
+            </div>
+                
+            
+        </div> <!-- block-left end -->
+            
+
+    </body>
+
+</html>

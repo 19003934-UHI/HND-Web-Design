@@ -1,0 +1,375 @@
+/** FONT IMPORT **/
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Yatra+One&display=swap');
+
+
+/** OPTIMISED FOR BROWSER **/
+
+* { margin: 0px; padding: 0px; }
+
+html { height: 100%; box-sizing: border-box; }
+body {
+	height: 100%;
+    margin: 0px;
+    background-size: cover;
+    font-family: 'Yatra One', cursive;
+}
+
+hr { margin: 10px 0px; opacity: .25; }
+
+/* The hero image */
+.hero-image {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/PTB-Theatre-Royal-1\.jpg);
+    height: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;  
+}
+
+/* Places text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Nav Bar start */
+li {
+    float: left;
+}
+
+ul {
+  position: sticky;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+  background-color: #333;
+  height: 32px;
+  
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1px 15px;
+    text-decoration: none;
+    border-style: groove;
+    border-color: #808080;
+}
+
+li:hover {
+    background-color: #faa45b;
+}
+
+.container {
+    width: 30%;
+    position: absolute;
+    left: 12%;
+}
+
+.block-left {
+    height: 70%;
+    width: 11.5%;
+    background-color: #a3594b;
+
+}
+
+.block-middle {
+    height: 70%;
+    width: 11.5%;
+    background-color: #a3594b;
+    position: absolute;
+    left: 45%;
+}
+
+.block-right {
+    height: 70%;
+    width: 11.5%;
+    background-color: #a3594b;
+    position: absolute;
+    left: 88.5%;
+}
+
+textarea {
+    resize: none;
+}
+
+/** index page **/
+
+video-container {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    width: 45%;
+    height: 50%;
+    background-color: rgb(110, 107, 107);
+}
+
+/** contact page **/
+
+content-container {
+    top: 37%;
+    width: 40%;
+    position: absolute;
+    left: 15%;
+    background-color: #f7e2b1;
+    height: 65%;
+}
+
+contact-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    top: 37%;
+    width: 25%;
+    position: absolute;
+    left: 60%;
+    /* background-color: yellow; */
+    height: 65%;
+}
+
+content-container h2[name='formname'] {
+    position: relative;
+    left: 60%;
+}
+content-container form div.firstname label {
+    position: absolute;
+    left: 15%;
+    top: 10%;
+}
+
+content-container form div.firstname input {
+    position: absolute;
+    left: 15%;
+    top: 14%;
+    width: 25%;
+}
+
+content-container form div.lastname label {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}
+
+content-container form div.lastname input {
+    position: absolute;
+    left: 50%;
+    top: 14%;
+    width: 25%;
+}
+
+content-container form div.email label {
+    position: absolute;
+    left: 15%;
+    top: 20%;
+}
+
+content-container form div.email input {
+    position: absolute;
+    left: 15%;
+    top: 24%;
+    width: 60%;
+}
+
+content-container form div.topic label {
+    position: absolute;
+    left: 15%;
+    top: 30%;
+}
+
+content-container form div.topic input {
+    position: absolute;
+    left: 15%;
+    top: 34%;
+    width: 60%;
+}
+
+content-container form div.addDetail label {
+    position: absolute;
+    left: 15%;
+    top: 40%;
+}
+
+content-container form div.addDetail textarea {
+    position: absolute;
+    left: 15%;
+    top: 45%;
+    width: 60%;
+    height: 38%;
+}
+
+content-container form div.button {
+    position: absolute;
+    left: 36%;
+    top: 87%;
+}
+
+/* Help Box */
+content-container note-space .helpbox {
+    font-size: large;
+    position: relative;
+    top: 2%;
+    left: 95%;
+    display: inline-block;
+    border: 1px black;
+  }
+
+  content-container note-space .helpbox .helpboxtext {
+    visibility: hidden;
+    width: 160px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+  /* Position help box */
+    position: absolute;
+    z-index: 1;
+  }
+
+  content-container note-space .helpbox:hover .helpboxtext {
+    visibility: visible;
+  }
+ 
+note-space p {
+    position: absolute;
+    left: 42%;
+    top: 40%;
+    word-wrap: break-word;
+    width: 14%;
+}
+
+
+contactus-seperator {
+    width: 0.3%;
+    height: 70%;
+    background-color: #333;
+    position: absolute;
+    left: 59%;
+}
+
+div.block-left content-container h2 {
+    position: absolute;
+    top: 0.5%;
+    left: 26%;
+
+}
+
+
+
+/** blog-start page **/
+
+blog-container {
+    position: absolute;
+    width: 65%;
+    height: 65%;
+    background-color:rgba(184, 19, 19, 0.5);
+    left: 20%;
+    top: 40%;
+    padding-left: 2%;
+}
+
+blog-description {
+    position: inherit;
+    width: 75%;
+    height: 30%;
+    background-color: aqua;
+    
+}
+
+blog-description textarea {
+    width: 100%;
+    height: 100%;
+}
+
+blog-comments {
+    position: relative;
+    width: 100%;
+    top: 35%;
+}
+
+blog-comments-box {
+    position: inherit;
+    width: 100%;
+    height: 10%;
+    /* background-color: aqua; */
+}
+
+blog-comments-box textarea {
+  
+    width: 78%;
+    height: 10%;
+
+}
+
+/* Login Page */
+div.login-here {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 50%;
+    height: 50%;
+}
+
+div.register-here {
+    position: absolute;
+    top: 30%;
+    right: 15%;
+    width: 50%;
+    height: 50%;
+}
+
+.block-left h1[name="loginHeader"] {
+    position: absolute;
+    left: 8.5%;
+    top: 45%;
+    word-wrap: break-word;
+}
+
+.block-left h1[name="registerHeader"] {
+    position: absolute;
+    left: 57%;
+    top: 45%;
+}
+
+.block-left h3[name="loginSubheader"] {
+    position: absolute;
+    left: 14%;
+    top: 60%;
+}
+
+.block-left h3[name="registerSubheader"] {
+    position: absolute;
+    left: 53%;
+    top: 60%;
+}
+
+.block-left button[name= "Login"] {
+    position: absolute;
+    left: 18%;
+    top: 70%;
+    width: auto;
+}
+
+.block-left button[name= "Register"] {
+    position: absolute;
+    left: 60%;
+    top: 70%;
+    width: auto;
+}
+
+div.block-left div.block-right {
+    visibility: visible;
+  } 
+
+div.block-middle {
+    position: absolute;
+    left: 51%;
+    width: 5%;
+}
+
